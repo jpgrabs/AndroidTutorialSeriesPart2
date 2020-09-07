@@ -33,12 +33,19 @@
             android:paddingBottom="20dp"/>
 
         <EditText
+            android:id="@+id/edtClipBoardFirstName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:hint="Enter First Name"
             android:digits="0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM "/>
 
+        <Button
+            android:id="@+id/btnCopyClipboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Copy"
+            android:textColor="@android:color/black"/>
     </LinearLayout>
 
 

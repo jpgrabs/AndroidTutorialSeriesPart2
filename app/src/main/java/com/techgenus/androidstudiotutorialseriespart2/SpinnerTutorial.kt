@@ -1,6 +1,9 @@
 package com.techgenus.androidstudiotutorialseriespart2
 
 import android.app.DatePickerDialog
+import android.content.ClipData
+import android.content.ClipboardManager
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -45,6 +48,15 @@ class SpinnerTutorial : AppCompatActivity() {
 
         edtDatePicker.setOnClickListener {
             setDate()
+        }
+
+        btnCopyClipboard.setOnClickListener{
+            var clipBoard: ClipboardManager = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+            val StrEdtFirtname = edtClipBoardFirstName.text.toString()
+            val clip = ClipData.newPlainText("Copied Text", StrEdtFirtname)
+            clipBoard.primaryClip = clip
+            Toast.makeText(this,"Copied Text",Toast.LENGTH_LONG).show()
+
         }
     }
     private fun condition1(){
