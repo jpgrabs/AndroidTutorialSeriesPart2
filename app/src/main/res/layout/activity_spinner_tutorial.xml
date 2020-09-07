@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:layout_margin="12dp">
         <Spinner
             android:id="@+id/statusFilter"
             android:layout_width="match_parent"
@@ -30,6 +31,13 @@
             android:focusable="false"
             android:focusableInTouchMode="false"
             android:paddingBottom="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Enter First Name"
+            android:digits="0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM "/>
 
     </LinearLayout>
 
