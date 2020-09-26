@@ -7,12 +7,28 @@
     android:padding="12dp"
     tools:context=".QrScanActivity">
 
-    <Button
-        android:id="@+id/btnQrScan"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Scan QR code"
-        android:textColor="@android:color/black"/>
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/btnQrScan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Scan QR code"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/btnFingerPrintScan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:layout_gravity="center"
+            android:text="Fingerprint Scan"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
 
 </FrameLayout>
